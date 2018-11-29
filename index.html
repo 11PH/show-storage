@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Series Storage</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body id="body">
+        <div class="intro">
+            <h1>Show Storage</h1>
+            <p >Welcome to Show Storage</p>
+            <p id="introText" class="hide">Theres so many shows to keep track of these days it's hard to keep up.
+                <br /><br />
+                Show Storage helps you to track shows you've seen already or want to watch at some point in the future.
+            </p>
+            <button id="readMore">...read more.</button>
+        </div>
+    <div id="seriesStorageWrap">
+
+
+        <div id="tabWrap">
+            <a href="#addnew" class=" active" id="addNewTab">Add Show
+            </a>
+            <a href="#result" id="resultTab">See Result
+            </a>
+        </div>
+
+        <div class="tabContent active" id="addnew">
+            <h5>Add a new Show:</h5>
+            <form id="inputForm">
+              <div class="filmSeriesWrap">
+                <input type="radio" name="type" id="filmInp" />
+                <label for="typeFilmInp">Film</label>
+                <input type="radio" name="type" id="seriesInp" />
+                <label for="typeSeriesInp">Series</label>
+              </div>
+
+              <div class="titleGenreWrap">
+                <label for="titleInp">Title</label>
+                <input type="text" name="title" id="titleInp" required />
+                  <br />
+                <label for="genreInp">Genre</label>
+                <input type="text" name="genre" id="genreInp" required />
+              </div>
+
+              <div>
+                <input type="checkbox" name="watched" id="watchedInp" />
+                <label for="watchedInp">Watched?</label>
+              </div>
+
+              <button>Add show to storage</button>
+            </form>
+        </div>
+
+        <div class="tabContent" id="result">
+            <p id="greetingText" class="active">Search or random a show below.</p>
+            <h5 id="resultTitle"></h5>
+            <span id="resultType" class="result"></span>
+            <span id="resultGenre" class="result"></span>
+            <span id="resultWatched" class="result"></span>
+            <button id="clearBtn" class="hide">Clear</button>
+            <button id="removeBtn" class="hide">Remove from list</button>
+        </div>
+
+    <div class="searchWrap">
+        <label for="searchInput">Search for a show title:</label>
+        <br />
+        <input type="text" name="searchInput" id="searchInput" placeholder="" />
+        <button name="searchInput" id="searchBtn">Find Show</button>
+        <button id="randomBtn">Random Show</button>
+    <!--             Use same button for show and hide the show list -->
+        <button id="showAllBtn" class="inlineActive">View Show List</button>
+        <button id="hideListBtn" class="hide">Hide Show List</button>
+    </div>
+
+
+    <div id="showListRoot"></div>
+
+</div>
+
+    <script src="script-tabs.js"></script>
+    <script src="script-storage.js"></script>
+</body>
+</html>

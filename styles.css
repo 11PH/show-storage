@@ -1,0 +1,123 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+#seriesStorageWrap, #showListRoot {
+    width:100%;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    
+}
+.intro {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #c6c6ce;
+}
+button {
+    border: 2px solid #cfcfde;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: white;
+    color: #2f2f33;
+    box-shadow: none;
+    font-weight: bold;
+}
+.tabContent button {
+    background-color: white;
+    color: #2f2f33;
+}
+button:hover {
+    background-color: #cfcfde;
+    cursor: pointer;
+}
+p {
+    margin: 0;
+    padding: 10px;
+}
+.searchWrap {
+    border: 2px solid #2f2f33;
+    border-radius: 4px;
+    padding: 10px;
+}
+#tabWrap {
+    display: flex;
+}
+#tabWrap > a {
+    display: inline-block;
+    width: 50%;
+    max-width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    color: #2f2f33;
+}
+.tabContent h5 {
+    padding: 20px 0 10px 0;
+    font-size: 18px;
+    margin: 0;
+}
+#tabWrap > a:hover {
+    cursor: pointer;
+}
+.tabContent {
+    display: none;
+    margin-bottom: 20px;
+}
+.hide {
+    display: none;
+}
+.active {
+    display: block;
+}
+#tabWrap .active, .tabContent.active {
+    background-color: #2f2f33;
+    color: white !important;
+}
+
+.inlineActive {
+    display: inline-block ;
+}
+form {
+    margin: 0;
+}
+h5 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: underline;
+    margin: 0 0 10px 0;
+}
+.result {
+    display: block;
+    padding: 5px 0;
+}
+#greetingText {
+    padding-top: 40px
+}
+#inputForm > label {
+  display: block;
+}
+#inputForm > div, button {
+  margin: 10px auto;
+}
+input[type="checkbox"] {
+  margin: 0;
+}
+.titleGenreWrap input {
+  margin: 0 0 10px 0;
+}
+.showWrap {
+    border: 2px solid #2f2f33;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+}
+.showWrap > span {
+    display: block;
+}
